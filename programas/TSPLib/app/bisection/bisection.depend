@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1558847535 source:c:\users\perro\documents\c_programs_k-center\bisection\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<time.h>
+	<stdbool.h>
+
