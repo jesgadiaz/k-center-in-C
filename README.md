@@ -18,15 +18,21 @@ The next step is to install the Gurobi package into Anaconda. You do this by fir
 
 From an Anaconda terminal issue the following command to add the Gurobi channel to your default search list:
 
-conda config --add channels http://conda.anaconda.org/gurobi
+```
+$ conda config --add channels http://conda.anaconda.org/gurobi
+```
 
 Now issue the following command to install the Gurobi package:
 
-conda install gurobi
+```
+$ conda install gurobi
+```
 
 You can remove the Gurobi package at any time by issuing the command:
 
-conda remove gurobi
+```
+$ conda remove gurobi
+```
 
 ### Step three: Install a Gurobi License
 
