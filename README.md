@@ -1,18 +1,19 @@
 # k-center-in-C
 Approximation algorithms for the vertex k-center problem implemented in C
 
-# To run the exact algorithm
-## Install gurobipy:
+# Exact algorithm
+## Setup
+### Install gurobipy:
 
 Source: https://www.gurobi.com/gurobi-and-anaconda-for-windows/
 
-### Step one: Download and install Anaconda
+#### Step one: Download and install Anaconda
 
 Gurobi supports Python 2.7 and 3.7 for Windows. Please choose the version of Anaconda you wish to download (the download will start automatically):
 
 Once the download is complete, click on it to run the installer.
 
-### Step two: Install Gurobi into Anaconda
+#### Step two: Install Gurobi into Anaconda
 
 The next step is to install the Gurobi package into Anaconda. You do this by first adding the Gurobi channel into your Anaconda platform and then installing the gurobi package from this channel.
 
@@ -34,8 +35,25 @@ You can remove the Gurobi package at any time by issuing the command:
 $ conda remove gurobi
 ```
 
-### Step three: Install a Gurobi License
+#### Step three: Install a Gurobi License
 
 The third step is to install a Gurobi license (if you haven’t already done so).
 
 You are now ready to use Gurobi from within Anaconda. Your next step is to launch either the Spyder IDE or Jupyter Notebook.
+
+## Run the exact algorithm
+
+To execute the exact algorithm (exact.py) run the following command on the Anaconda prompt:
+
+```
+$ python exact.py {instance} {n} {k} {instance_format}
+```
+
+## Where,
+
+|  Parameter |                                          Description                                          |
+|----------|---------------------------------------------------------------------------------------------|
+| `{instance}` | (string) Instance file path                                    |
+| `{n}`    | (integer) Number of vertices  |
+| `{k}`    | (integer) Number of centers   |
+| `{instance_format}`    | (string) Instance format: 'tsplib' or 'orlib' |
