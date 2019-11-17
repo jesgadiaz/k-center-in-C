@@ -18,7 +18,7 @@ $ gcc -o 'output' {code} -lm
 ## Run
 
 ```
-$ gcc 'output' {algorithm} {file} {n} {k} {seed} {instance_format}
+$ 'output' {algorithm} {instance} {n} {k} {seed} {instance_format}
 ```
 
 ## Where,
@@ -37,7 +37,7 @@ The code named main_big_bisection.c admits instances with up to 71009 vertices. 
 ## Run
 
 ```
-$ gcc 'output' {algorithm} {file} {n} {k} {seed}
+$ 'output' {algorithm} {instance} {n} {k} {seed}
 ```
 
 ## Where,
