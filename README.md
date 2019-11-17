@@ -32,7 +32,7 @@ $ 'output' {algorithm} {instance} {n} {k} {seed} {instance_format}
 | `{seed}`    | (integer) Seed   |
 | `{instance_format}`    | (string) Instance format: tsplib or orlib |
 
-The code named main_big_bisection.c admits instances with up to 71009 vertices. Besides, instead of perorming a binary search it performs a bisection search (for HS and CDSh algorithms), and ony admits instances in TSPLib format.
+The code named main_big_bisection.c admits instances with up to 71009 vertices. Besides, instead of performing a binary search it performs a bisection search (for HS and CDSh algorithms), and ony admits instances in TSPLib format.
 
 ## Run
 
