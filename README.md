@@ -132,3 +132,16 @@ https://pdfs.semanticscholar.org/f276/c00bac7594107c291947f560b7b48b1439d7.pdf
 <a id="4">[4]</a> Garcia-Diaz, Jesus, Jairo Sanchez-Hernandez, Ricardo Menchaca-Mendez, and Rolando Menchaca-Mendez. "When a worse approximation factor gives better performance: a 3-approximation algorithm for the vertex k-center problem." Journal of Heuristics 23, no. 5 (2017): 349-366.
 
 https://link.springer.com/article/10.1007/s10732-017-9345-x
+
+# Citation
+
+<a id="1">[1]</a> Garcia-Diaz, Jesus, Rolando Menchaca-Mendez, Ricardo Menchaca-Mendez, Saúl Pomares Hernández, Julio César Pérez-Sansalvador, and Noureddine Lakouari. "Approximation Algorithms for the Vertex K-Center Problem: Survey and Experimental Evaluation." IEEE Access 7 (2019): 109228-109245. https://ieeexplore.ieee.org/document/8792058
+
+
+<a id="4">[4]</a> Garcia-Diaz, Jesus, Jairo Sanchez-Hernandez, Ricardo Menchaca-Mendez, and Rolando Menchaca-Mendez. "When a worse approximation factor gives better performance: a 3-approximation algorithm for the vertex k-center problem." Journal of Heuristics 23, no. 5 (2017): 349-366. https://link.springer.com/article/10.1007/s10732-017-9345-x
+
+# Contact
+
+* jesgadiaz@inaoep.mx
+* https://ccc.inaoep.mx/~jesgadiaz/
+
