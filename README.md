@@ -1,6 +1,55 @@
 # k-center-in-C
 Approximation algorithms for the vertex k-center problem implemented in C
 
+# Approximation algorithms
+
+main_small.c and main_medium.c are equivalent. However, main_small.c admits instances with up to 900 vertices, and main_medium.c admits instances with up to 4663 vertices. 
+
+## Compile
+
+```
+$ gcc -o 'output' {code} -lm
+```
+
+|  Parameter |                                          Description                                          |
+|----------|---------------------------------------------------------------------------------------------|
+| `{code}` | (string) main_small.c or main_medium.c                              |
+
+## Run
+
+```
+$ gcc 'output' {algorithm} {file} {n} {k} {seed} {instance_format}
+```
+
+## Where,
+
+|  Parameter |                                          Description                                          |
+|----------|---------------------------------------------------------------------------------------------|
+| `{algorithm}` | (string) Algorithm: Gon, Gon+, HS, HS+, CDS, CDSh, or CDSh+                                    |
+| `{instance}` | (string) Instance file path                                    |
+| `{n}`    | (integer) Number of vertices  |
+| `{k}`    | (integer) Number of centers   |
+| `{seed}`    | (integer) Seed   |
+| `{instance_format}`    | (string) Instance format: tsplib or orlib |
+
+The code named main_big_bisection.c admits instances with up to 71009 vertices. Besides, instead of perorming a binary search it performs a bisection search (for HS and CDSh algorithms), and ony admits instances in TSPLib format.
+
+## Run
+
+```
+$ gcc 'output' {algorithm} {file} {n} {k} {seed}
+```
+
+## Where,
+
+|  Parameter |                                          Description                                          |
+|----------|---------------------------------------------------------------------------------------------|
+| `{algorithm}` | (string) Algorithm: Gon, Gon+, HS, or CDSh                                    |
+| `{instance}` | (string) Instance file path                                    |
+| `{n}`    | (integer) Number of vertices  |
+| `{k}`    | (integer) Number of centers   |
+| `{seed}`    | (integer) Seed   |
+
 # Exact algorithm
 ## Setup
 ### Install gurobipy:
@@ -56,4 +105,4 @@ $ python exact.py {instance} {n} {k} {instance_format}
 | `{instance}` | (string) Instance file path                                    |
 | `{n}`    | (integer) Number of vertices  |
 | `{k}`    | (integer) Number of centers   |
-| `{instance_format}`    | (string) Instance format: 'tsplib' or 'orlib' |
+| `{instance_format}`    | (string) Instance format: tsplib or orlib |
