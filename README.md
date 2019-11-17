@@ -1,7 +1,7 @@
 # k-center-in-C
 Approximation algorithms for the vertex k-center problem implemented in C
 
-# Approximation algorithms
+# Approximation algorithms [[1]](#1)
 
 main_small.c and main_medium.c are equivalent. However, main_small.c admits instances with up to 900 vertices, and main_medium.c admits instances with up to 4663 vertices. 
 
@@ -106,3 +106,29 @@ $ python exact.py {instance} {n} {k} {instance_format}
 | `{n}`    | (integer) Number of vertices  |
 | `{k}`    | (integer) Number of centers   |
 | `{instance_format}`    | (string) Instance format: tsplib or orlib |
+
+# References
+
+## Approximation algorithms survey
+
+<a id="1">[1]</a> Garcia-Diaz, Jesus, Rolando Menchaca-Mendez, Ricardo Menchaca-Mendez, Saúl Pomares Hernández, Julio César Pérez-Sansalvador, and Noureddine Lakouari. "Approximation Algorithms for the Vertex K-Center Problem: Survey and Experimental Evaluation." IEEE Access 7 (2019): 109228-109245.
+
+https://ieeexplore.ieee.org/document/8792058
+
+## Gon algorithm
+
+<a id="2">[2]</a> Gonzalez, Teofilo F. "Clustering to minimize the maximum intercluster distance." Theoretical Computer Science 38 (1985): 293-306.
+
+https://www.semanticscholar.org/paper/Clustering-to-Minimize-the-Maximum-Intercluster-Gonzalez/1cdd3c62172b7598cd090e349d38e9644734edfd
+
+## HS algorithm
+
+<a id="3">[3]</a> Hochbaum, Dorit S., and David B. Shmoys. "A best possible heuristic for the k-center problem." Mathematics of operations research 10, no. 2 (1985): 180-184.
+
+https://pdfs.semanticscholar.org/f276/c00bac7594107c291947f560b7b48b1439d7.pdf
+
+## CDS algorithm
+
+<a id="4">[4]</a> Garcia-Diaz, Jesus, Jairo Sanchez-Hernandez, Ricardo Menchaca-Mendez, and Rolando Menchaca-Mendez. "When a worse approximation factor gives better performance: a 3-approximation algorithm for the vertex k-center problem." Journal of Heuristics 23, no. 5 (2017): 349-366.
+
+https://link.springer.com/article/10.1007/s10732-017-9345-x
