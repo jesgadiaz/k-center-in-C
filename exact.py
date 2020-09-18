@@ -100,6 +100,8 @@ def run(r):
         global m, num_centers, runtime, cap
         m = Model("mip1")
         
+        m.params.BestObjStop = k
+        
         y = []
         for i in range(n):
             y.append(0)
