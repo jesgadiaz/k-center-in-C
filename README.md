@@ -3,7 +3,7 @@ Approximation algorithms for the vertex k-center problem implemented in C
 
 # Approximation algorithms [[1]](#1)
 
-main_small.c and main_medium.c are equivalent. However, main_small.c admits instances with up to 900 vertices, and main_medium.c admits instances with up to 4663 vertices. 
+main_small.c and main_medium.c are equivalent. However, main_small.c admits instances with up to 900 vertices, and main_medium.c admits instances with up to 4663 vertices.
 
 ## Compile
 
@@ -14,6 +14,8 @@ $ gcc -o 'output' {code} -lm
 |  Parameter |                                          Description                                          |
 |----------|---------------------------------------------------------------------------------------------|
 | `{code}` | (string) main_small.c or main_medium.c                              |
+
+To avoid issues, use complete paths to the files.
 
 ## Run
 
@@ -32,7 +34,9 @@ $ 'output' {algorithm} {instance} {n} {k} {seed} {instance_format}
 | `{seed}`    | (integer) Seed   |
 | `{instance_format}`    | (string) Instance format: tsplib or orlib |
 
-The code named main_big_bisection.c admits instances with up to 71009 vertices. Besides, instead of performing a binary search it performs a bisection search (for HS and CDSh algorithms), and ony admits instances in TSPLib format.
+The code named main_big_bisection.c admits instances with up to 71009 vertices. Besides, instead of performing a binary search it performs a bisection search (for HS and CDSh algorithms), and only admits instances in TSPLib format.
+
+To avoid issues, use complete paths to the files.
 
 ## Run
 
@@ -49,6 +53,24 @@ $ 'output' {algorithm} {instance} {n} {k} {seed}
 | `{n}`    | (integer) Number of vertices  |
 | `{k}`    | (integer) Number of centers   |
 | `{seed}`    | (integer) Seed   |
+
+To avoid issues, use complete paths to the files.
+
+## Usage examples
+
+For compilation in Ubuntu:
+
+```
+$ gcc -o /home/user/k-center-in-C-master/main_program /home/user/k-center-in-C-master/main_medium.c -lm
+```
+
+Execution in Ubuntu:
+
+```
+$ ./main_program Gon+ /home/user/k-center-in-C-master/instances/ORLib/pmed40.txt 900 90 0 orlib
+```
+
+The reported output includes the solution size and execution time, which does not include the all-pairs shortest paths computation time. Namely, only the time required by the algorithm is reported.
 
 # Exact algorithm
 ## Setup
