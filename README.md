@@ -70,7 +70,7 @@ Execution in Ubuntu:
 $ ./main_program Gon+ /home/user/k-center-in-C-master/instances/ORLib/pmed40.txt 900 90 0 orlib
 ```
 
-The reported output includes the solution size and execution time, which does not include the all-pairs shortest paths computation time. Namely, only the time required by the algorithm is reported.
+The output includes the solution size and execution time, which does not include the all-pairs shortest paths computation time. Namely, only the time required by the algorithm is reported.
 
 # Exact algorithm
 ## Setup
